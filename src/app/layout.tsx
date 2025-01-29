@@ -3,7 +3,7 @@ import { Noto_Sans_JP } from "next/font/google";
 import type { PropsWithChildren } from "react";
 import "./globals.css";
 
-const notoSansJP = Noto_Sans_JP();
+const notoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "UEC卒論タイマー",
