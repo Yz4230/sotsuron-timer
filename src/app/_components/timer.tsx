@@ -1,9 +1,9 @@
 "use client";
 
-import { differenceInSeconds, endOfDay, formatDate } from "date-fns";
+import { differenceInSeconds, formatDate, toDate } from "date-fns";
 import { useEffect, useState } from "react";
 
-const DEADLINE = endOfDay("2025-01-31");
+const DEADLINE = toDate("2025-01-31T15:59");
 
 export default function Timer() {
   const [text, setText] = useState("");
